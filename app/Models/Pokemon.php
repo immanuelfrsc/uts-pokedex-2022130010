@@ -9,7 +9,8 @@ class Pokemon extends Model
 {
     use HasFactory;
 
-    protected $fillable =[
+    // Tambahkan ini
+    protected $fillable = [
         'name',
         'species',
         'primary_type',
@@ -19,6 +20,6 @@ class Pokemon extends Model
         'attack',
         'defense',
         'is_legendary',
-        'photo'
+        'photo',
     ];
 }

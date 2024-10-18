@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Pokemon;
 use Illuminate\Database\Seeder;
 
 class PokemonTableSeeder extends Seeder
@@ -15,9 +14,9 @@ class PokemonTableSeeder extends Seeder
      */
     public function run()
     {
-        Pokemon::table('pokemon')->delete();
+        \DB::table('pokemon')->delete();
 
-        Pokemon::table('pokemon')->insert(array (
+        \DB::table('pokemon')->insert(array (
             0 =>
             array (
                 'name' => 'Bulbasaur',
@@ -6519,7 +6518,7 @@ class PokemonTableSeeder extends Seeder
                 'photo' => 'public/simipour.png',
             ),
         ));
-        Pokemon::table('pokemon')->insert(array (
+        \DB::table('pokemon')->insert(array (
             0 =>
             array (
                 'name' => 'Munna',
